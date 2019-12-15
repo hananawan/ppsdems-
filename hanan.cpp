@@ -98,8 +98,11 @@ void edit(long id)
   }
 }
 
-void search_sal(int salary)
-
+    void search_sal(int salary)
+        {
+		int a = 0, b = 0;
+		while (a < 10)
+		{
 
 
 
