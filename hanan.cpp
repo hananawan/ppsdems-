@@ -98,13 +98,15 @@ void edit(long id)
   }
 }
 
+void search_sal(int salary)
 
 
 
 
 
 
-                }
+
+
 
 };
 
