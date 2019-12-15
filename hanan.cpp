@@ -55,7 +55,7 @@ public:
 	}
 	int main
 	{
-
+        CMS obj;
 	    return 0;
 	}
 \\commit
