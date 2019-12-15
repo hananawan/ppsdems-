@@ -90,6 +90,13 @@ void edit(long id)
     	cout << "employee deleted" << endl;
 		break;
     }
+        else
+    {   cout<<"No such id/person present"<<endl;
+        break;
+    }
+        a++;
+  }
+}
 
 
 
