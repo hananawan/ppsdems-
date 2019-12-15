@@ -210,6 +210,6 @@ cms obj;
 
   return 0;
 }
-
+cout<<"salman";
 
 cout<<"wajeeh;
