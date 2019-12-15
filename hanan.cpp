@@ -103,7 +103,11 @@ void edit(long id)
 		int a = 0, b = 0;
 		while (a < 10)
 		{
-
+              if(salarys[a]>=salary)
+    {
+      cout<<"ID of a person with salary greater than %d is %ld."<<salary<<ids[a]<<endl;
+            b++;
+    }
 
 
 
