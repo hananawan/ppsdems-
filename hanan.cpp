@@ -111,7 +111,8 @@ void edit(long id)
      a++;
   }
   if(b!=0
-
+    	cout << "There r %d peaple with salary higher then %d and there ids r given above." << b << salary << endl;
+		else
 
 
 
