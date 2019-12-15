@@ -3,127 +3,114 @@
 #include "stdio.h"
 
 using namespace std;
-
-class ems{
+class ems {
 private:
-long ids[10];
-char names[10][20];
-char roles[10][20];
-int salarys[10];
-int no;
+	long ids[10];
+	char names[10][20];
+	char roles[10][20];
+	int salarys[10];
+	int no;
 
 public:
 
-ems(){
-no=0;
-}
-void new_emp(char name[20], long id, char role[20], int salary)
+	ems() {
+		no = 0;
+	}
+	void new_emp(char name[20], long id, char role[20], int salary)
 	{
-		strcpy(names[no], name);
-		strcpy(roles[no], role);
+		strcpy_s(names[no], name);
+		strcpy_s(roles[no], role);
 		salarys[no] = salary;
 		ids[no] = id;
 		cout << "employee details saved" << endl;
 		no++;
 	}
+	void search(long id)
+	{
+		int a = 0;
+		while (a < 10)
+		{
+			if (id == ids[a])
+			{
+				cout << "YES,The employee is present and have details:" << endl;
+				cout << "Name is " << names[a] << endl;
+				cout << "Role is " << roles[a] << endl;
+				cout << "Salary is " << salarys[a] << endl;
+				cout << "id is " << ids[a] << endl;
+				break;
 
-
-void search(long id)
-{
-  int a=0;
-  while(a<10)
-  {
-    if(id==ids[a])
-    {
-      cout<<"YES,The employee is present and have details:"<<endl;
-      cout<<"Name is "<<names[a]<<endl;
-      cout<<"Role is "<<roles[a]<<endl;
-      cout<<"Salary is "<<salarys[a]<<endl;
-      cout<<"id is "<<ids[a]<<endl;
-      break;
-
-    }
-    else
-{
-    cout<<"No employee with this id"<<endl;
-    break;
-}
-a++;
-}
-}
-
-void edit(long id)
-{
-  int a=0;
-  while(a<10)
-  {
-    if(id==ids[a])
-    {
-    cout<<"Enter new Name?"<<endl;
-    cin>>names[a];
-    cout<<"Enter new role?"<<endl;
-    cin>>roles[a];
-    cout<<"Enter new salary?"<<endl;
-    cin>>salarys[a];
-    cout<<"Enter new id?"<<endl;
-    cin>>ids[a];
-    break;
-    }
-    else
-    {
-      cout<<"No such id present in our list sir!"<<endl;
-      break;
-    }
-    a++;
-  }
-}
-
-  void deletes(long id){
-  int a=0;
-
-    while(a<10)
-  {
-    if(id==ids[a])
-    {
-      ids[a]=0;
-      salarys[a]=0;
-    	cout << "employee deleted" << endl;
-		break;
-    }
-        else
-    {   cout<<"No such id/person present"<<endl;
-        break;
-    }
-        a++;
-  }
-}
-
-    void search_sal(int salary)
-        {
+			}
+			else
+			{
+				cout << "No employee with this id" << endl;
+				break;
+			}
+			a++;
+		}
+	}
+	void edit(long id)
+	{
+		int a = 0;
+		while (a < 10)
+		{
+			if (id == ids[a])
+			{
+				cout << "Enter new Name?" << endl;
+				cin >> names[a];
+				cout << "Enter new role?" << endl;
+				cin >> roles[a];
+				cout << "Enter new salary?" << endl;
+				cin >> salarys[a];
+				cout << "Enter new id?" << endl;
+				cin >> ids[a];
+				break;
+			}
+			else
+			{
+				cout << "No such id present in our list sir!" << endl;
+				break;
+			}
+			a++;
+		}
+	}
+	void deletes(long id)
+	{
+		int a = 0;
+		while (a < 10)
+		{
+			if (id == ids[a])
+			{
+				ids[a] = 0;
+				salarys[a] = 0;
+				cout << "employee deleted" << endl;
+				break;
+			}
+			else
+			{
+				cout << "No such id/person present" << endl;
+				break;
+			}
+			a++;
+		}
+	}
+	void search_sal(int salary)
+	{
 		int a = 0, b = 0;
 		while (a < 10)
 		{
-              if(salarys[a]>=salary)
-    {
-      cout<<"ID of a person with salary greater than %d is %ld."<<salary<<ids[a]<<endl;
-            b++;
-    }
-     a++;
-  }
-  if(b!=0
-    	cout << "There r %d peaple with salary higher then %d and there ids r given above." << b << salary << endl;
+			if (salarys[a] >= salary)
+			{
+				cout << "ID of a person with salary greater than %d is %ld." << salary << ids[a] << endl;
+				b++;
+			}
+			a++;
+		}
+		if (b != 0)
+			cout << "There r %d peaple with salary higher then %d and there ids r given above." << b << salary << endl;
 		else
-            cout<<"There r no such employee."<<endl;
-}
-
-
-
-
-
+			cout << "There r no such employee." << endl;
+	}
 };
-
-
-
 
 class cms {
 
