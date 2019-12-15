@@ -52,7 +52,31 @@ a++;
 }
 }
 
-
+void edit(long id)
+{
+  int a=0;
+  while(a<10)
+  {
+    if(id==ids[a])
+    {
+    cout<<"Enter new Name?"<<endl;
+    cin>>names[a];
+    cout<<"Enter new role?"<<endl;
+    cin>>roles[a];
+    cout<<"Enter new salary?"<<endl;
+    cin>>salarys[a];
+    cout<<"Enter new id?"<<endl;
+    cin>>ids[a];
+    break;
+    }
+    else
+    {
+      cout<<"No such id present in our list sir!"<<endl;
+      break;
+    }
+    a++;
+  }
+}
 
 
 
