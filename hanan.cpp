@@ -147,6 +147,29 @@ break;
 }
 
 
+void city_search(char city[20])
+{
+  int a=0,b=0;
+  while(a<10)
+  {
+    if(cities[a]==city)
+    {
+      cout<<"lives in a same city.\n"<<names[a];
+    b++;
+  }
+  a++;
+  }
+  if(b!=0)
+  {
+     cout<<"There r"<<b<< "no of persons living in the city and their names r given above;"<<city<<endl;
+     }
+else
+cout<<"No one lives in a same specific region"<<endl;
+}
+
+
+
+
 //cout<<"edit"
 
 
