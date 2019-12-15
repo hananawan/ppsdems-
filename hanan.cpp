@@ -238,5 +238,6 @@ cout<<"No one lives in a same specific region"<<endl;
 
 	    return 0;
 	}
-\\commit
-\\only two functions are there
+//commit
+//only two functions are there
+//still errors in the code
