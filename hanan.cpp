@@ -78,7 +78,11 @@ void edit(long id)
   }
 }
 
-  void deletes(long id)
+  void deletes(long id){
+  int a=0;
+
+
+                }
 
 };
 
