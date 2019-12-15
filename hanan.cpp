@@ -113,6 +113,8 @@ void edit(long id)
   if(b!=0
     	cout << "There r %d peaple with salary higher then %d and there ids r given above." << b << salary << endl;
 		else
+            cout<<"There r no such employee."<<endl;
+}
 
 
 
