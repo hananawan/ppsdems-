@@ -3,35 +3,6 @@
 #include "stdio.h"
 
 using namespace std;
-class ems {
-private:
-	long ids[10];
-	char names[10][20];
-	char roles[10][20];
-	int salarys[10];
-	int no;
-
-public:
-
-	ems() {
-		no = 0;
-	}
-
-void new_emp(char name[20],long id,char role[20],int salary)
-{
-  strcpy(names[no],name);
-  strcpy(roles[no],role);
-  salarys[no]=salary;
-  ids[no]=id;
-  cout<<"employee details saved"<<endl;
-  no++;
-}
-
-
-
-
-
-};
 class cms {
 
 private:
@@ -249,15 +220,5 @@ int main()
 
 
 
-<<<<<<< HEAD
-	    return 0;
-	}
-//commit
-//only two functions are there
-//still errors in the code
-=======
 	return 0;
 }
->>>>>>> eb774ee7ffa0a7f96cbbd35066a9a4f2eb51eafd
-
-//fsgfgsfgs
