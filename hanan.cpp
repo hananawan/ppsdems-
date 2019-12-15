@@ -210,3 +210,6 @@ cms obj;
 
   return 0;
 }
+
+
+cout<<"wajeeh;
