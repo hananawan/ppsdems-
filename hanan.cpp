@@ -54,6 +54,35 @@ public:
 		}
 
 	}
+
+
+	// search function
+
+	void search(long id)
+{
+int a = 0;
+while (a < 10)
+{
+if (id == ids[a])
+{
+cout << "YES,The employee is present and have details:" << endl;
+cout << "Name is " << names[a] << endl;
+cout << "Role is " << roles[a] << endl;
+cout << "Salary is " << salarys[a] << endl;
+cout << "id is " << ids[a] << endl;
+break;
+
+}
+else
+{
+cout << "No employee with this id" << endl;
+break;
+}
+a++;
+}
+}
+
+
 	void edit(long id)
 	{
 		int a = 0;
