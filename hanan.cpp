@@ -387,7 +387,7 @@ int main()
 		}
 		else if (a == 3)
 		{
-			cout << "Thanks for using \n";
+			cout << "Thanks for using! \n";
 			break;
 		}
 		else
