@@ -108,6 +108,26 @@ a++;
 			a++;
 		}
 	}
+	void deletes(long id)
+	{
+		int a = 0;
+		while (a < 10)
+		{
+			if (id == ids[a])
+			{
+				ids[a] = 0;
+				salarys[a] = 0;
+				cout << "employee deleted" << endl;
+				break;
+			}
+			else
+			{
+				cout << "No such id/person present" << endl;
+				break;
+			}
+			a++;
+		}
+	}
 };
 	int main
 	{
