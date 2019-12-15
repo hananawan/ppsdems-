@@ -108,7 +108,9 @@ void edit(long id)
       cout<<"ID of a person with salary greater than %d is %ld."<<salary<<ids[a]<<endl;
             b++;
     }
-
+     a++;
+  }
+  if(b!=0
 
 
 
