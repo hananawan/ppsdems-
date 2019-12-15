@@ -3,6 +3,35 @@
 #include "stdio.h"
 
 using namespace std;
+class ems {
+private:
+	long ids[10];
+	char names[10][20];
+	char roles[10][20];
+	int salarys[10];
+	int no;
+
+public:
+
+	ems() {
+		no = 0;
+	}
+
+void new_emp(char name[20],long id,char role[20],int salary)
+{
+  strcpy(names[no],name);
+  strcpy(roles[no],role);
+  salarys[no]=salary;
+  ids[no]=id;
+  cout<<"employee details saved"<<endl;
+  no++;
+}
+
+
+
+
+
+};
 class cms {
 
 private:
