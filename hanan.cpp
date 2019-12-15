@@ -32,7 +32,7 @@ public:
 		cout << "Contact saved successfully...\n" << endl;
 		no++;
 	}
-	void search(char name[20])
+	void searchs(char name[20])
 	{
 		int a = 0;
 		while (a < 10)
@@ -56,78 +56,70 @@ public:
 	}
 
 
-	// search function
-
-	void search(long id)
-{
-int a = 0;
-while (a < 10)
-{
-if (id == ids[a])
-{
-cout << "YES,The employee is present and have details:" << endl;
-cout << "Name is " << names[a] << endl;
-cout << "Role is " << roles[a] << endl;
-cout << "Salary is " << salarys[a] << endl;
-cout << "id is " << ids[a] << endl;
-break;
-
-}
-else
-{
-cout << "No employee with this id" << endl;
-break;
-}
-a++;
-}
-}
 
 
-	void edit(long id)
+	void edit(char name[20])
 	{
 		int a = 0;
+		char choice;
 		while (a < 10)
 		{
-			if (id == ids[a])
+			if (names[a] == name)
 			{
-				cout << "Enter new Name?" << endl;
-				cin >> names[a];
-				cout << "Enter new role?" << endl;
-				cin >> roles[a];
-				cout << "Enter new salary?" << endl;
-				cin >> salarys[a];
-				cout << "Enter new id?" << endl;
-				cin >> ids[a];
+				do
+				{
+					cout << "What u want to change?" << endl;
+					cout << "Change Name(N)" << endl;
+					cout << "Change gender(G)" << endl;
+					cout << "Change adress(A)" << endl;
+					cout << "Change City(C)" << endl;
+					cout << "Change Email(E)" << endl;
+					cout << "Change phone no(P)" << endl;
+					cin >> choice;
+					switch (choice)
+					{
+					case 'N':
+						cout << "Enter new name:" << endl;
+						cin >> names[a];
+						break;
+					case 'G':
+						cout << "Enter new gender:" << endl;
+						cin >> genders[a];
+						break;
+					case 'A':
+						cout << "Enter new adress:\nFormate should be(ho#,street#):" << endl;
+						cin >> adresses[a];
+						break;
+					case 'C':
+						cout << "Enter new city:" << endl;
+						cin >> cities[a];
+						break;
+					case 'E':
+						cout << "Enter new email:" << endl;
+						cin >> emails[a];
+						break;
+					case 'P':
+						cout << "Enter new phone no:" << endl;
+						cin >> phone;
+						break;
+					default:
+						cout << "Please sir/mam,enter a valid choice:" << endl;
+					}
+					cout << "Press E for Ending & any other variable to continue: " << endl;
+					cin >> choice;
+				} while (choice != 'E');
+				cout << "Contact updated" << endl;
 				break;
 			}
 			else
 			{
-				cout << "No such id present in our list sir!" << endl;
+				cout << "No such contact present." << endl;
 				break;
 			}
 			a++;
 		}
 	}
-	void deletes(long id)
-	{
-		int a = 0;
-		while (a < 10)
-		{
-			if (id == ids[a])
-			{
-				ids[a] = 0;
-				salarys[a] = 0;
-				cout << "employee deleted" << endl;
-				break;
-			}
-			else
-			{
-				cout << "No such id/person present" << endl;
-				break;
-			}
-			a++;
-		}
-	}
+
 };
 	int main
 	{
