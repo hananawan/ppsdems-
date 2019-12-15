@@ -103,11 +103,11 @@ public:
 						cin >> phone;
 						break;
 					default:
-						cout << "Please sir/mam,enter a valid choice:" << endl;
+cout << "Please sir/mam,enter a valid choice:" << endl;
 					}
-					cout << "Press E for Ending & any other variable to continue: " << endl;
+cout << "Press E for Ending & any other variable to continue: " << endl;
 					cin >> choice;
-				} while (choice != 'E');
+                } while (choice != 'E');
 				cout << "Contact updated" << endl;
 				break;
 			}
@@ -134,6 +134,52 @@ public:
     cout<<"Press D for deleting  contact: "<<endl;
     cout<<"Press C for searching city: "<<endl;
     cin>>choice;
+    switch (choice)
+  {case 'N':
+  cout<<"Enter  Name?"<<endl;
+  cin>>name;
+  cout<<"Enter adress?\nFormate should be(ho#,street#)"<<endl;
+  cin>>adress;
+  cout<<"Enter gender?"<<endl;
+  cin>>gender;
+  cout<<"Enter city?"<<endl;
+  cin>>city;
+  cout<<"Enter email?"<<endl;
+  cin>>email;
+  cout<<"Enter phone?"<<endl;
+  cin>>phone;
+        obj.new1(name,gender,adress,city,email,phone);
+  break;
+  case 'S':
+  cout<<"Enter name u want to search?"<<endl;
+  cin>>name;
+  obj.search(name);
+  break;
+  case 'E':
+  cout<<"Enter name of contact u want to edit?"<<endl;
+  cin>>name;
+  obj.edit(name);
+  break;
+  case 'D':
+  cout<<"Enter name u want to del?"<<endl;
+  cin>>name;
+  obj.delete1(name);
+  break;
+  case 'C':
+  cout<<"Enter city u want to search peaple from?"<<endl;
+  cin>>city;
+  obj.city_search(city);
+  break;
+  default:
+  cout<<"Please enter a valid choice!"<<endl;
+  }
+  cout<<"Press E for Ending & any other variable for continue: "<<endl;
+  cin>>choice;
+
+  } while(choice!='E');
+
+
+
 	    return 0;
 	}
 \\commit
