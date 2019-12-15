@@ -82,7 +82,17 @@ public:
 };
 	int main
 	{
-        CMS obj;
+        cms obj;
+  char name[20],adress[40],choice,city[20],gender[20],email[40];
+  long phone;
+  do {
+    cout<<"What do you want to do : "<<endl;
+    cout<<"Press N for entering new contact: "<<endl;
+    cout<<"Press S for searching contact details: "<<endl;
+    cout<<"Press E for editing contact info: "<<endl;
+    cout<<"Press D for deleting  contact: "<<endl;
+    cout<<"Press C for searching city: "<<endl;
+    cin>>choice;
 	    return 0;
 	}
 \\commit
