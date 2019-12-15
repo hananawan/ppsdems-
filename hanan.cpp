@@ -120,6 +120,39 @@ public:
 		}
 	}
 
+	// deleted function
+	void delete1(char name[20])
+{
+  int a=0,b=0;
+  while(a<10)
+  {
+    if(names[a]==name)
+    {
+      while(b<20)
+      {
+        names[a][b]='0';
+        b++;
+      }
+      cout<<"Contact deleted"<<endl;
+phone=0;
+break;
+    }
+    else
+    {
+      cout<<"No such contact present."<<endl;
+      break;
+    }
+    a++;
+  }
+}
+
+
+
+
+
+
+
+
 };
 	int main
 	{
