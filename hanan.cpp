@@ -59,3 +59,4 @@ public:
 	    return 0;
 	}
 \\commit
+\\only two functions are there
