@@ -87,6 +87,9 @@ void edit(long id)
     {
       ids[a]=0;
       salarys[a]=0;
+    	cout << "employee deleted" << endl;
+		break;
+    }
 
 
 
