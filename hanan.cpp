@@ -3,6 +3,20 @@
 #include "stdio.h"
 
 using namespace std;
+class ems {
+private:
+	long ids[10];
+	char names[10][20];
+	char roles[10][20];
+	int salarys[10];
+	int no;
+
+public:
+
+	ems() {
+		no = 0;
+	}
+};
 class cms {
 
 private:
