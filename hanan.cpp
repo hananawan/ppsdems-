@@ -271,60 +271,75 @@ public:
 int main()
 {
 	cms obj;
-	char name[20], adress[40], choice, city[20], gender[20], email[40];
-	long phone;
-	do {
-		cout << "What do you want to do : " << endl;
-		cout << "Press N for entering new contact: " << endl;
-		cout << "Press S for searching contact details: " << endl;
-		cout << "Press E for editing contact info: " << endl;
-		cout << "Press D for deleting  contact: " << endl;
-		cout << "Press C for searching city: " << endl;
-		cin >> choice;
-		switch (choice)
-		{
-		case 'N':
-			cout << "Enter  Name?" << endl;
-			cin >> name;
-			cout << "Enter adress?\nFormate should be(ho#,street#)" << endl;
-			cin >> adress;
-			cout << "Enter gender?" << endl;
-			cin >> gender;
-			cout << "Enter city?" << endl;
-			cin >> city;
-			cout << "Enter email?" << endl;
-			cin >> email;
-			cout << "Enter phone?" << endl;
-			cin >> phone;
-			obj.new1(name, gender, adress, city, email, phone);
-			break;
-		case 'S':
-			cout << "Enter name u want to search?" << endl;
-			cin >> name;
-			obj.search(name);
-			break;
-		case 'E':
-			cout << "Enter name of contact u want to edit?" << endl;
-			cin >> name;
-			obj.edit(name);
-			break;
-		case 'D':
-			cout << "Enter name u want to del?" << endl;
-			cin >> name;
-			obj.delete1(name);
-			break;
-		case 'C':
-			cout << "Enter city u want to search peaple from?" << endl;
-			cin >> city;
-			obj.city_search(city);
-			break;
-		default:
-			cout << "Please enter a valid choice!" << endl;
-		}
-		cout << "Press E for Ending & any other variable for continue: " << endl;
-		cin >> choice;
+	ems obj1;
+	char name[20], adress[40], choice, city[20], gender[20], email[40],names[20],role[20];
+	long id, phone;
+	int salary, a = 0;
+	cout << "You want to enter in contact management system or employee management system?\npress 1 for CMS and 2 for EMS:\n";
+	cin >> a;
+	if (a == 1)
+	{
+		do {
+			cout << "What do you want to do : " << endl;
+			cout << "Press N for entering new contact: " << endl;
+			cout << "Press S for searching contact details: " << endl;
+			cout << "Press E for editing contact info: " << endl;
+			cout << "Press D for deleting  contact: " << endl;
+			cout << "Press C for searching city: " << endl;
+			cin >> choice;
+			switch (choice)
+			{
+			case 'N':
+				cout << "Enter  Name?" << endl;
+				cin >> name;
+				cout << "Enter adress?\nFormate should be(ho#,street#)" << endl;
+				cin >> adress;
+				cout << "Enter gender?" << endl;
+				cin >> gender;
+				cout << "Enter city?" << endl;
+				cin >> city;
+				cout << "Enter email?" << endl;
+				cin >> email;
+				cout << "Enter phone?" << endl;
+				cin >> phone;
+				obj.new1(name, gender, adress, city, email, phone);
+				break;
+			case 'S':
+				cout << "Enter name u want to search?" << endl;
+				cin >> name;
+				obj.search(name);
+				break;
+			case 'E':
+				cout << "Enter name of contact u want to edit?" << endl;
+				cin >> name;
+				obj.edit(name);
+				break;
+			case 'D':
+				cout << "Enter name u want to del?" << endl;
+				cin >> name;
+				obj.delete1(name);
+				break;
+			case 'C':
+				cout << "Enter city u want to search peaple from?" << endl;
+				cin >> city;
+				obj.city_search(city);
+				break;
+			default:
+				cout << "Please enter a valid choice!" << endl;
+			}
+			cout << "Press E for Ending & any other variable for continue: " << endl;
+			cin >> choice;
 
-	} while (choice != 'E');
+		} while (choice != 'E');
+	}
+	else if (a == 2)
+	{
+
+	}
+	else
+	{
+		cout << "enter a valid choice\n";
+	}
 
 
 
