@@ -78,7 +78,7 @@ void edit(long id)
   }
 }
 
-
+  void deletes(long id)
 
 };
 
