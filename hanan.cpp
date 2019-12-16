@@ -100,13 +100,13 @@ public:
 		{
 			if (salarys[a] >= salary)
 			{
-				cout << "ID of a person with salary greater than %d is %ld." << salary << ids[a] << endl;
+				cout << "ID of a person with salary" << salary <<" greater than is"<< ids[a] << endl;
 				b++;
 			}
 			a++;
 		}
 		if (b != 0)
-			cout << "There r %d peaple with salary higher then %d and there ids r given above." << b << salary << endl;
+			cout << "There r "<< b <<"peaple with salary higher then "<< salary <<" and there ids r given above."  << endl;
 		else
 			cout << "There r no such employee." << endl;
 	}
