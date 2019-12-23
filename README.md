@@ -12,6 +12,7 @@ management system.
 Built-with
 The code is a simple code containing classes and the language used is C++.
 
+Contributors:
 The Authors for the project are,
 Hanan Maqsood Awan
 Syed Wajeh ul Hassan
